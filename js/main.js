@@ -15,16 +15,15 @@ $('html').on('keydown', function (e) {
 });
 
 const audioElement = $('<audio>')[0];
-audioElement.setAttribute('src', './media/loooon.mp4')
+audioElement.setAttribute('src', 'media/loooon.mp4')
 
 
 $body.on('click', '.bubble', function () {
     $(this).addClass('is-popping');
+    audioElement.currentTime = 1;
     audioElement.play();
-
 });
 
 $body.on('transitioned', '.bubble', function () {
     $(this).remove();
-}
-)
+});
