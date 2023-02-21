@@ -11,10 +11,16 @@ body {
 
 .container{
     border: solid blue 10px;
-    height: 460px;
-    width: 460px;
+    height: 660px;
+    width: 760px;
     background-image: url("../media/waber.png");
     background-repeat: repeat;
+    margin: auto;
+}
+
+h2{
+    color: white;
+    text-align: center;
 }
 
 *,
